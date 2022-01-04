@@ -5,8 +5,6 @@ const reader = readline.createInterface({
   output: process.stdout,
 });
 
-
-
 reader.question("What would you like to calculate?", function(input){
 	tokens = input.split(' ');
 	
@@ -22,8 +20,8 @@ reader.question("What would you like to calculate?", function(input){
 		console.log(num1 * num2);
 	} else if (mathSymbol === "/"){
 		console.log(num1 / num2);
-	} else if (mathSymbol = "√"){
-		console.log(Math.sqrt(num1), Math.sqrt(num2));
+	} else if (mathSymbol === "√"){
+		console.log(Math.sqrt(num1));
 	}
 	else {
 		console.log('Incorrect input')
